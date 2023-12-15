@@ -12,18 +12,18 @@ app.use(cors())
 const http_server = http.createServer(app);
 
 
-// const io = new Server(http_server,{
-//     cors:{
-//         origin:"https://socketapp-frontend.vercel.app",
-//         methods : ["GET","POST"]
-//     }
-// });
 const io = new Server(http_server,{
     cors:{
-        origin:"http://localhost:3000",
+        origin:"https://socketapp-frontend.vercel.app",
         methods : ["GET","POST"]
     }
 });
+// const io = new Server(http_server,{
+//     cors:{
+//         origin:"http://localhost:3000",
+//         methods : ["GET","POST"]
+//     }
+// });
 io.on("connection",(socket) => {
     // console.log(socket.id);
     socket.on("join_room", (data) => {
