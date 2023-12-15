@@ -39,7 +39,7 @@ io.on("connection",(socket) => {
     
 
 })
-// http_server.get((req,res) => {
+// http_server.get("/", (req,res) => {
 //     res.send("hi"):
 // });
 
