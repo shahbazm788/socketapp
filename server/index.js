@@ -14,7 +14,7 @@ const http_server = http.createServer(app);
 
 const io = new Server(http_server,{
     cors:{
-        origin:"https://socketapp-frontend.vercel.app",
+        origin:"https://socket-front-end.vercel.app/",
         methods : ["GET","POST"]
     }
 });
