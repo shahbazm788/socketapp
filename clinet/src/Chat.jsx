@@ -11,7 +11,7 @@ const Chat = () => {
     const [joinedUser,setJoinedUser] = useState('');
     const [incomingMessage,setIncomingMessage] = useState([]);
     const [sendr_class,setSenderClass] = useState("")
-    const socket = io("https://socketapp-theta.vercel.app",{
+    const socket = io("https://socketapp-rho.vercel.app/",{
         // autoConnect: false
       });
     // const socket = io("http://localhost:5000",{
